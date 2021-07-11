@@ -19,12 +19,16 @@ public class JakartaJsonbTry {
 		    .withFormatting(true);
 
 		// Create Jsonb with custom configuration
-//		Jsonb jsonb = JsonbBuilder.create(config);
-		Jsonb jsonb = JsonbBuilder.create();
+		Jsonb jsonb = JsonbBuilder.create(config);
+//		Jsonb jsonb = JsonbBuilder.create();
 
 		// Use it!
 		String result = jsonb.toJson(headshot);
 		
 		System.out.println(result);
+		
+		User a = jsonb.fromJson(result, User.class);
+		
+		System.out.println(a);
 	}
 }

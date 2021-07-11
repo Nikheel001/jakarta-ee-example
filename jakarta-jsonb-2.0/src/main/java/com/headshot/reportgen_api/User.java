@@ -29,4 +29,10 @@ public class User {
 	public void setOccupation(String occupation) {
 		this.occupation = occupation;
 	}
+	
+	@Override
+	public String toString() {
+		return "User [name=" + name + ", age=" + age + ", occupation=" + occupation + "]";
+	}
+	
 }
