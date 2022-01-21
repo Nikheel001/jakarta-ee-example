@@ -21,24 +21,36 @@
 			<version>5.6.3.Final</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<version>2.5.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<version>2.0.206</version>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink -->
 		<!--
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>eclipselink</artifactId>
 			<version>3.1.0-M1</version>
+		</dependency>
+		-->
+		
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+		<dependency>
+		    <groupId>com.h2database</groupId>
+		    <artifactId>h2</artifactId>
+		    <version>2.1.210</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+		<dependency>
+		    <groupId>org.xerial</groupId>
+		    <artifactId>sqlite-jdbc</artifactId>
+		    <version>3.36.0.3</version>
+		</dependency>
+	
+		<!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+		<!--
+		<dependency>
+		    <groupId>org.apache.derby</groupId>
+		    <artifactId>derby</artifactId>
+		    <version>10.15.2.0</version>
 		</dependency>
 		-->
 	</dependencies>
