@@ -1,60 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_5_0.xsd" 
-	version="5.0"> -->
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
-  <display-name>jakartaservlettry</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  <context-param>
-    <description>values which will be avalible in all servlets
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="5.0">
+	<display-name>jakartaservlettry</display-name>
+	<context-param>
+		<description>values which will be avalible in all servlets
 		</description>
-    <param-name>globalkey</param-name>
-    <param-value>context_level_global_value</param-value>
-  </context-param>
-  <servlet>
-    <description></description>
-    <display-name>SimpleHttpServlet</display-name>
-    <servlet-name>SimpleHttpServlet</servlet-name>
-    <servlet-class>com.headshot.jakartaservlettry.SimpleHttpServlet
-		</servlet-class>
-    <init-param>
-      <description>testing servlet level key-values</description>
-      <param-name>key</param-name>
-      <param-value>value</param-value>
-    </init-param>
-  </servlet>
-  <servlet>
-    <description></description>
-    <display-name>SimpleGenericServletTry</display-name>
-    <servlet-name>SimpleGenericServletTry</servlet-name>
-    <servlet-class>com.headshot.jakartaservlettry.SimpleGenericServletTry
-		</servlet-class>
-  </servlet>
-  <servlet>
-    <description></description>
-    <display-name>ResourceOverH2</display-name>
-    <servlet-name>ResourceOverH2</servlet-name>
-    <servlet-class>com.headshot.jakartaservlettry.http2image.ResourceOverH2</servlet-class>
-  </servlet>
+		<param-name>globalkey</param-name>
+		<param-value>context_level_global_value</param-value>
+	</context-param>
 
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
 
-  <servlet-mapping>
-    <servlet-name>SimpleHttpServlet</servlet-name>
-    <url-pattern>/SimpleHttpServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>SimpleGenericServletTry</servlet-name>
-    <url-pattern>/SimpleGenericServletTry</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ResourceOverH2</servlet-name>
-    <url-pattern>/ResourceOverH2</url-pattern>
-  </servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>ResourceOverH2</display-name>
+		<servlet-name>ResourceOverH2</servlet-name>
+		<servlet-class>com.headshot.jakartaservlettry.ResourceOverH2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceOverH2</servlet-name>
+		<url-pattern>/ResourceOverH2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>Login</display-name>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.headshot.jakartaservlettry.requestdispatch.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>Welcome</display-name>
+		<servlet-name>Welcome</servlet-name>
+		<servlet-class>com.headshot.jakartaservlettry.requestdispatch.Welcome</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Welcome</servlet-name>
+		<url-pattern>/Welcome</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>SimpleHttpServlet</display-name>
+		<servlet-name>SimpleHttpServlet</servlet-name>
+		<servlet-class>com.headshot.jakartaservlettry.SimpleHttpServlet</servlet-class>
+		<init-param>
+			<description>testing servlet level key-values</description>
+			<param-name>key</param-name>
+			<param-value>value</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SimpleHttpServlet</servlet-name>
+		<url-pattern>/SimpleHttpServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>SimpleGenericServletTry</display-name>
+		<servlet-name>SimpleGenericServletTry</servlet-name>
+		<servlet-class>com.headshot.jakartaservlettry.SimpleGenericServletTry</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SimpleGenericServletTry</servlet-name>
+		<url-pattern>/SimpleGenericServletTry</url-pattern>
+	</servlet-mapping>
+
 </web-app>
