@@ -1,4 +1,4 @@
-package com.headshot.reportgen_api;
+package com.headshot;
 
 /**
  * 

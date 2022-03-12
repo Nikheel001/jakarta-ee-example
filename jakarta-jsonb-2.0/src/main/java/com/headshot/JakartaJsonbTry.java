@@ -1,4 +1,4 @@
-package com.headshot.reportgen_api;
+package com.headshot;
 
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
