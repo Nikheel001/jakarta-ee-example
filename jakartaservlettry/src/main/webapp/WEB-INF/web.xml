@@ -80,5 +80,16 @@
 		<servlet-name>SimpleGenericServletTry</servlet-name>
 		<url-pattern>/SimpleGenericServletTry</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<description>
+		hidden form field with servlet</description>
+		<display-name>HiddenFormFieldTry</display-name>
+		<servlet-name>HiddenFormFieldTry</servlet-name>
+		<servlet-class>com.headshot.jakartaservlettry.hiddenformfield.HiddenFormFieldTry</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HiddenFormFieldTry</servlet-name>
+		<url-pattern>/HiddenFormFieldTry</url-pattern>
+	</servlet-mapping>
 
 </web-app>
