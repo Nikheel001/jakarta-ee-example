@@ -1,5 +1,6 @@
 <a href="/jakartaservlettry/SimpleHttpServlet">Simple servlet</a>
-<a href="/jakartaservlettry/SimpleGenericServletTry">Simple generic servlet</a>
+<a href="/jakartaservlettry/SimpleGenericServletTry">Simple generic
+	servlet</a>
 <a href="/jakartaservlettry/ResourceOverH2">ResourceOverH2</a>
 <a href="/jakartaservlettry/ResourceOverHttp2">ResourceOverHttp2</a>
 
@@ -8,8 +9,13 @@
 		type="password" name="password"> <input type="submit"
 		value="Login">
 </form>
+<br>
+<p>HiddenFormField must use Form</p>
 <form action="HiddenFormFieldTry" method="post">
-	<label>userIdentifier is hidden there</label> 
-	<input type="hidden" name="identifier" value="secretUserId">
-	<input type="submit" value="HiddenFormFieldTry">
+	<label>userIdentifier is hidden there</label> <input type="hidden"
+		name="identifier" value="secretUserId"> <input type="submit"
+		value="HiddenFormFieldTry">
 </form>
+
+<a href="/jakartaservlettry/UrlRewriteTry?secretkey=blabla&anotherkey=blabla2">share sessioninfo using
+	querystring</a>
