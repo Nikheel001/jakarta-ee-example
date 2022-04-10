@@ -1,0 +1,16 @@
+user should be able to :
+    save, edit, remove a transaction (debit | credit)
+    save, edit, remove periodic transaction (debit | credit)
+
+    list upcoming debit transaction
+    list upcoming credit transaction
+
+    import, export transactions
+
+    add category to transaction (fd, rd, mf, stock, stock_dividend, mf_dividend, food, groceries,....)
+    attach category to category_group
+
+    specify transaction mode to keep track of where/how transaction was performed
+    (upi, cash , online, debitcard, creditcard, paytm, gpay, amazonpay, phonepay)
+
+    generate spend analytics (monthly, yearly, categorized)

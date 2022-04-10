@@ -1,0 +1,142 @@
+[
+	{
+		"categoryid" : 1,
+		"name" : "MutualFund",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 2,
+		"name" : "Stock",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 3,
+		"name" : "SGB",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 4,
+		"name" : "Grocery",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 5,
+		"name" : "Dairy",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 6,
+		"name" : "Travel",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 7,
+		"name" : "Food",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 8,
+		"name" : "Beverage",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 9,
+		"name" : "Shopping",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 10,
+		"name" : "Entertainment",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 11,
+		"name" : "Recharge",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 12,
+		"name" : "Bill",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 13,
+		"name" : "Cashback",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 14,
+		"name" : "Refund",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 15,
+		"name" : "FD",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 16,
+		"name" : "RD",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 17,
+		"name" : "TD",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 18,
+		"name" : "HealthPremium",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 19,
+		"name" : "VehicleInsurance",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 20,
+		"name" : "Insurance",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 21,
+		"name" : "Milk",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 22,
+		"name" : "Fruit",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 23,
+		"name" : "ButterMilk",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 24,
+		"name" : "Biscuit",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 25,
+		"name" : "Chocolate",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 26,
+		"name" : "Cake",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 27,
+		"name" : "StockDividend",
+		"group_categoryid" : 0
+	},
+	{
+		"categoryid" : 28,
+		"name" : "MutualFundDividend",
+		"group_categoryid" : 0
+	}
+]

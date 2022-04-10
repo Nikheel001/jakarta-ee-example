@@ -16,13 +16,11 @@ package com.headshot.jakartaconcurrencytry.task;
 //	
 //	@Override
 //	public ManagedTaskListener getManagedTaskListener() {
-//		// TODO Auto-generated method stub
 //		return null;
 //	}
 //
 //	@Override
 //	public Map<String, String> getExecutionProperties() {
-//		// TODO Auto-generated method stub
 //		return null;
 //	}
 //
@@ -42,7 +40,6 @@ public class SimpleThreadImpl implements Runnable
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println(ref);

@@ -17,7 +17,6 @@ public class SimpleGenericServletTry extends GenericServlet {
 	 */
 	public SimpleGenericServletTry() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
