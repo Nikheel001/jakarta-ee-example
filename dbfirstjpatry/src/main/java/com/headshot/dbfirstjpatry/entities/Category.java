@@ -4,34 +4,33 @@ import java.io.Serializable;
 import jakarta.persistence.*;
 import java.util.List;
 
-
 /**
  * The persistent class for the category database table.
  * 
  */
 @Entity
-@Table(name="category")
-@NamedQuery(name="Category.findAll", query="SELECT c FROM Category c")
+@Table(name = "category")
+@NamedQuery(name = "Category.findAll", query = "SELECT c FROM Category c")
 public class Category implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(unique=true, nullable=false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(unique = true, nullable = false)
 	private int categoryid;
 
-	@Column(name="group_categoryid")
+	@Column(name = "group_categoryid")
 	private int groupCategoryid;
 
-	@Column(nullable=false, length=20)
+	@Column(nullable = false, length = 20)
 	private String name;
 
-	//bi-directional many-to-one association to Periodicrecord
-	@OneToMany(mappedBy="category")
+	// bi-directional many-to-one association to Periodicrecord
+	@OneToMany(mappedBy = "category")
 	private List<Periodicrecord> periodicrecords;
 
-	//bi-directional many-to-one association to Record
-	@OneToMany(mappedBy="category")
+	// bi-directional many-to-one association to Record
+	@OneToMany(mappedBy = "category")
 	private List<Record> records;
 
 	public Category() {

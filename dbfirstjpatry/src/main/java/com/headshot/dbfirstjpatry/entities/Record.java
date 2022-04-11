@@ -2,7 +2,7 @@ package com.headshot.dbfirstjpatry.entities;
 
 import java.io.Serializable;
 import jakarta.persistence.*;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 
 /**
@@ -28,16 +28,14 @@ public class Record implements Serializable {
 	@Column(name="is_debit")
 	private byte isDebit;
 
-	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name="last_modified")
-	private Date lastModified;
+	private LocalDateTime lastModified;
 
 	@Column(nullable=false, length=75)
 	private String title;
 
-	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name="transacted_on")
-	private Date transactedOn;
+	private LocalDateTime transactedOn;
 
 	//bi-directional many-to-one association to Category
 	@ManyToOne
@@ -84,11 +82,11 @@ public class Record implements Serializable {
 		this.isDebit = isDebit;
 	}
 
-	public Date getLastModified() {
+	public LocalDateTime getLastModified() {
 		return this.lastModified;
 	}
 
-	public void setLastModified(Date lastModified) {
+	public void setLastModified(LocalDateTime lastModified) {
 		this.lastModified = lastModified;
 	}
 
@@ -100,11 +98,11 @@ public class Record implements Serializable {
 		this.title = title;
 	}
 
-	public Date getTransactedOn() {
+	public LocalDateTime getTransactedOn() {
 		return this.transactedOn;
 	}
 
-	public void setTransactedOn(Date transactedOn) {
+	public void setTransactedOn(LocalDateTime transactedOn) {
 		this.transactedOn = transactedOn;
 	}
 

@@ -10,7 +10,8 @@ import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
-import com.headshot.dbfirstjpatry.entities.Category;
+//import com.headshot.dbfirstjpatry.entities.Transactionmode;
+//import com.headshot.dbfirstjpatry.repo.CategoryRepo;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -66,14 +67,27 @@ public class Main {
 
 	public static void main(String[] args) {
 		init();
+
+//		entityManager.getTransaction().begin();
+//		
+//		Category c = new Category();
+//		c.setName("MutualFundDividend");
+//		entityManager.persist(c);
+//		
+//		entityManager.getTransaction().commit();
+//		CategoryRepo repo = new CategoryRepo(entityManager);
+//
+//		for (var item : repo.listAll()) {
+//			System.out.println(String.format("id: %d , name: %s", item.getCategoryid(), item.getName()));
+//		}
 		
-		entityManager.getTransaction().begin();
-		
-		Category c = new Category();
-		c.setName("MutualFundDividend");
-		entityManager.persist(c);
-		
-		entityManager.getTransaction().commit();
+//		entityManager.getTransaction().begin();
+//		
+//		Transactionmode trn_mode = new Transactionmode();
+//		trn_mode.setName("phonepay");
+//		entityManager.persist(trn_mode);
+//		
+//		entityManager.getTransaction().commit();
 		entityManager.close();
 		entityManagerFactory.close();
 	}

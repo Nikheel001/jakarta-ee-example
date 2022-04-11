@@ -1,0 +1,38 @@
+[
+	{
+		"trmodeid" : 1,
+		"name" : "upi"
+	},
+	{
+		"trmodeid" : 2,
+		"name" : "cash"
+	},
+	{
+		"trmodeid" : 3,
+		"name" : "online"
+	},
+	{
+		"trmodeid" : 4,
+		"name" : "debitcard"
+	},
+	{
+		"trmodeid" : 5,
+		"name" : "creditcard"
+	},
+	{
+		"trmodeid" : 6,
+		"name" : "paytm"
+	},
+	{
+		"trmodeid" : 7,
+		"name" : "gpay"
+	},
+	{
+		"trmodeid" : 8,
+		"name" : "amazonpay"
+	},
+	{
+		"trmodeid" : 9,
+		"name" : "phonepay"
+	}
+]
