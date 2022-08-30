@@ -1,0 +1,3 @@
+project can be executed with builing oe-fat-jar with dependencies.
+project can be executed with mvn:exec plugin (tested in windows) only works if beans.xml has discovery-mode all.
+project can be executed after mvn clean package dependency:copy-dependencies and then adding all jar (dependencies+buildJar) in class path and providing main class (tested in windows) only works if beans.xml has discovery-mode all.
