@@ -62,6 +62,10 @@ public class Main {
 		System.out.println("====================== Jakarta Criteria API ========================");
 		System.out.println();
 		mml.listfirst10JakartaCriteriaQueryBuilder();
+		System.out.println();
+		System.out.println("====================== Jakarta NamedQuery ========================");
+		System.out.println();
+		mml.listfirst10JakartaNamedQuery();
 		entityManager.close();
 		entityManagerFactory.close();
 	}

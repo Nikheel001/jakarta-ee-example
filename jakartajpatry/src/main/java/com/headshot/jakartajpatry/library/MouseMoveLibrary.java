@@ -46,4 +46,11 @@ public class MouseMoveLibrary {
 			System.out.println(m);
 		}
 	}
+
+	public void listfirst10JakartaNamedQuery() {
+		TypedQuery<MouseMove> list10 = ref.createNamedQuery("MouseMove.FindAll", MouseMove.class).setMaxResults(10);
+		for (MouseMove m : (Iterable<MouseMove>) list10.getResultList()) {
+			System.out.println(m);
+		}
+	}
 }
