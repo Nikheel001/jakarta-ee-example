@@ -1,5 +1,6 @@
 package com.headshot.jakartaconcurrencytry;
 
+import com.headshot.jakartaconcurrencytry.task.ManagedTaskImpl;
 import com.headshot.jakartaconcurrencytry.task.SimpleThreadImpl;
 
 import jakarta.annotation.Resource;
@@ -18,6 +19,10 @@ public class ManagedTaskExecImpl {
 	private ManagedExecutorService mes;
 
 	public void submitTask(SimpleThreadImpl i) {
+		mes.submit(i);
+	}
+
+	public void submitTask(ManagedTaskImpl i) {
 		mes.submit(i);
 	}
 }

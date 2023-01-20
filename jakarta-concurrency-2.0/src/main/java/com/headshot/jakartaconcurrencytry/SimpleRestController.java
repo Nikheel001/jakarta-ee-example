@@ -1,6 +1,8 @@
 package com.headshot.jakartaconcurrencytry;
 
+import com.headshot.jakartaconcurrencytry.task.ManagedTaskImpl;
 import com.headshot.jakartaconcurrencytry.task.SimpleThreadImpl;
+import com.headshot.jakartaconcurrencytry.tasklistener.SimpleTaskListener;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.ApplicationPath;
@@ -24,10 +26,20 @@ public class SimpleRestController extends Application {
 	@Inject
 	private ManagedScheduledTaskExecImpl mstei;
 
+	@Inject
+	SimpleTaskListener stl;
+
 	@Path("/start")
 	@GET
 	public String spawnTask() {
 		mtei.submitTask(new SimpleThreadImpl("once"));
+		return "ok";
+	}
+
+	@Path("/start2")
+	@GET
+	public String spawnTask2() {
+		mtei.submitTask(new ManagedTaskImpl(stl));
 		return "ok";
 	}
 

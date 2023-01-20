@@ -22,4 +22,13 @@ public class ManagedScheduledTaskExecImpl {
 	public void scheduleSubmit(SimpleThreadImpl s) {
 		mses.scheduleAtFixedRate(s, 0, 5000, TimeUnit.MILLISECONDS);
 	}
+	
+	/**
+	 * <managedScheduledExecutorService jndiName="concurrent/scheduledExecutor1">
+	<contextService>
+		<classloaderContext/>
+	</contextService>
+       <concurrencyPolicy max="5"/>
+</managedScheduledExecutorService>
+	 */
 }
