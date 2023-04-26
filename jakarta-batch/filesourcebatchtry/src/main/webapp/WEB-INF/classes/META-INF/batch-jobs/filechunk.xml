@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id="filechunk" xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:jsl="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd"
+    version="2.0">
+    <!--
+    this works too
+    <jsl:properties>
+		<jsl:property name="inputfile" value="path/to/input/text/file.txt" />
+		<jsl:property name="outputfile" value="path/to/output/text/file.txt" />
+	</jsl:properties>
+    -->
+<properties>
+<property name="inputfile" value="D:/input.txt" />
+<property name="outputfile" value="D:/output.txt" />
+</properties>
+    <step id="step1">
+        <chunk>
+            <reader ref="readFile"/>
+            <jsl:processor ref="capitalizeLine"/>
+            <writer ref="writeFile"/>
+        </chunk>
+    </step>
+</job>
