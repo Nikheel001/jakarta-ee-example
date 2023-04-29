@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id="hsqldbchunk" xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:jsl="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd"
+	version="2.0">
+	<step id="step1">
+		<chunk>
+			<reader ref="ReadOrder" />
+			<jsl:processor ref="ProcessOrder" />
+			<writer ref="WriteResult" />
+		</chunk>
+	</step>
+</job>

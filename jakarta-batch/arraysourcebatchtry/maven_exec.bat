@@ -1,1 +1,0 @@
-mvn exec:java -Dexec.mainClass="com.headshot.arraysourcebatchtry.Main" -Dexec.classpathScope=runtime

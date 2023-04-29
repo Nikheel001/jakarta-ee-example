@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<Resource id="localhsql" type="DataSource">
+		JdbcDriver
+		org.hsqldb.jdbc.JDBCDriver
+		JdbcUrl jdbc:hsqldb:path\to\sample
+		UserName none
+		Password none
+		JtaManaged true
+	</Resource>
+</resources>
+<!-- 
+Datasource Classname: org.hsqldb.jdbc.JDBCDataSource
+Driver Classname: org.hsqldb.jdbc.JDBCDriver
+-->
